@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Weather App Using OpenWeatherMap API</title>
+
+        <link rel="stylesheet" href="styles/style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+        <style>
+
+            body
+            {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('media/day1.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 100vh;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <ul class="navbar">
+
+            <li style="float: left; margin-left: -10px;" class="forecast"><a href="index.html">🌤 Forecast</a></li>
+
+            <li><a href="#">⟳</a></li>
+
+            <li><a href="#">☆★</a></li>
+
+            <li><a href="#">···</a></li>
+
+            <li><input class="search-city" type="text" placeholder="🔍︎ Search City"></li>
+
+        </ul>
+
+        <h1 class="location-name">Indore, Madhya Pradesh</h1>
+
+        <div class="temperature-container">
+
+            <div class="temperature-icon">⛅</div>
+
+            <div class="temperature-value">30<sup>o</sup>C</div>
+
+        </div>
+
+        <h2 class="weather-type">Mostly Cloudy</h2>
+
+        <div class="additionals-first-row">
+
+            <span class="air-quality-additional">
+
+                <span class="air-quality-additional-label">Air Quality Index: </span>
+
+                <span class="air-quality-index-additional-value">Good</span>
+                
+            </span>
+
+            <span class="real-feel-additional">
+
+                <span class="real-feel-additional-label">Real Feel: </span>
+
+                <span class="real-feel-additional-value">24<sup>o</sup>C</span>
+
+            </span>
+
+            <span class="humidity-additional">
+
+                <span class="humidity-additional-label">Humidity: </span>
+
+                <span class="humidity-additional-value">24%</span>
+                
+            </span>
+
+        </div>
+
+        <div class="additionals-second-row">
+
+            <span class="wind-speed-additional">
+
+                <span class="wind-speed-additional-label">Wind Speed: </span>
+                
+                <span class="wind-speed-additional-value">10 km/h</span>
+                
+            </span>
+
+            <span class="wind-direction-additional">
+
+                <span class="wind-direction-additional-label">Wind Direction: </span>
+
+                <span class="wind-direction-additional-value">East</span>
+
+            </span>
+
+            <span class="visibility-additional">
+
+                <span class="visibility-additional-label">Visibility</span>
+
+                <span class="visibility-additional-value">15 km</span>
+                
+            </span>
+
+        </div>
+
+        <!-- <br> -->
+
+        <!-- <div class="separator"></div> -->
+
+        <div class="daily-forecast">
+
+            <h2 class="daily-forecast-label">Daily</h2>
+
+            <div class="daily-forecast-card">
+
+                <p class="daily-forecast-date">Fri 27</p>
+
+                <div class="daily-forecast-logo">⛅</div>
+
+                <div class="max-min-temperature-daily-forecast">
+
+                    <span class="max-daily-forecast">37<sup>o</sup>C</span>
+
+                    <span class="min-daily-forecast">25<sup>o</sup>C</span>
+
+                </div>
+
+                <p class="weather-type-daily-forecast">Sunny</p>
+
+            </div>
+
+            <div class="daily-forecast-card">
+
+                <p class="daily-forecast-date">Fri 27</p>
+
+                <div class="daily-forecast-logo">⛅</div>
+
+                <div class="max-min-temperature-daily-forecast">
+
+                    <span class="max-daily-forecast">37<sup>o</sup>C</span>
+
+                    <span class="min-daily-forecast">25<sup>o</sup>C</span>
+
+                </div>
+
+                <p class="weather-type-daily-forecast">Sunny</p>
+
+            </div>
+
+            <div class="daily-forecast-card">
+
+                <p class="daily-forecast-date">Fri 27</p>
+
+                <div class="daily-forecast-logo">⛅</div>
+
+                <div class="max-min-temperature-daily-forecast">
+
+                    <span class="max-daily-forecast">37<sup>o</sup>C</span>
+
+                    <span class="min-daily-forecast">25<sup>o</sup>C</span>
+
+                </div>
+
+                <p class="weather-type-daily-forecast">Sunny</p>
+
+            </div>
+
+            <div class="daily-forecast-card">
+
+                <p class="daily-forecast-date">Fri 27</p>
+
+                <div class="daily-forecast-logo">⛅</div>
+
+                <div class="max-min-temperature-daily-forecast">
+
+                    <span class="max-daily-forecast">37<sup>o</sup>C</span>
+
+                    <span class="min-daily-forecast">25<sup>o</sup>C</span>
+
+                </div>
+
+                <p class="weather-type-daily-forecast">Sunny</p>
+
+            </div>
+
+            <div class="daily-forecast-card">
+
+                <p class="daily-forecast-date">Fri 27</p>
+
+                <div class="daily-forecast-logo">⛅</div>
+
+                <div class="max-min-temperature-daily-forecast">
+
+                    <span class="max-daily-forecast">37<sup>o</sup>C</span>
+
+                    <span class="min-daily-forecast">25<sup>o</sup>C</span>
+
+                </div>
+
+                <p class="weather-type-daily-forecast">Sunny</p>
+
+            </div>
+
+            <div class="daily-forecast-card">
+
+                <p class="daily-forecast-date">Fri 27</p>
+
+                <div class="daily-forecast-logo">⛅</div>
+
+                <div class="max-min-temperature-daily-forecast">
+
+                    <span class="max-daily-forecast">37<sup>o</sup>C</span>
+
+                    <span class="min-daily-forecast">25<sup>o</sup>C</span>
+
+                </div>
+
+                <p class="weather-type-daily-forecast">Sunny</p>
+
+            </div>
+
+        </div>
+
+        <script src="scripts/script.js"></script>
+            
+    </body>
+
+</html>
