@@ -32,6 +32,8 @@ body
     text-align: right;
 
     opacity: 100%;
+
+    transition: 0.3s;
 }
 
 ul
@@ -39,6 +41,8 @@ ul
     margin: 0;
 
     padding: 5px;
+
+    transition: 0.3s;
 }
 
 .navbar li
@@ -48,6 +52,8 @@ ul
     padding: 5px;
 
     display: inline-block;
+
+    transition: 0.3s;
 }
 
 .navbar li a
@@ -56,9 +62,11 @@ ul
 
     color: #fff;
 
-    padding: 12.5px;
+    padding: 15px;
 
     text-decoration: none;
+
+    transition: 0.3s;
 }
 
 .navbar .search-city
@@ -83,6 +91,13 @@ ul
     border-radius: 2.5px;
 
     outline: none;
+}
+
+.navbar a:hover
+{
+    background: #000;
+
+    transition: 0.3s;
 }
 
 .location-name
