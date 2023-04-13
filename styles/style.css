@@ -168,7 +168,7 @@ ul
     margin-top: 12.5px;
 }
 
-.air-quality-additional, .real-feel-additional, .humidity-additional
+.air-quality-additional, .real-feel-additional, .humidity-additional, .max-temperature-additional, .min-temperature-additional
 {
     margin-left: 5px;
 
@@ -181,7 +181,7 @@ ul
     padding: 2.5px 10px;
 }
 
-.wind-speed-additional, .wind-direction-additional, .visibility-additional
+.wind-speed-additional, .wind-direction-additional, .visibility-additional, .pressure-additional, .sunrise-additional, .sunset-additional
 {
     margin-left: 5px;
 
@@ -228,7 +228,7 @@ ul
 
     border-radius: 10px;
 
-    background: rgba(0, 0, 0, 0.375);
+    background: rgba(0, 0, 0, 0);
 
     width: 125px;
 
