@@ -47,9 +47,10 @@ ul
 {
   font-size: 25px;
   color: #fff;
-  padding: 15px;
+  padding: 5px 10px;
   text-decoration: none;
   transition: 0.3s;
+  border-radius: 5px;
 }
 
 .navbar .search-city
@@ -69,10 +70,11 @@ ul
   outline: none;
 }
 
-.navbar a:hover
+.navbar a:hover:not(.repo-link)
 {
   background: #000;
   transition: 0.3s;
+  border-radius: 5px;
 }
 
 .location-name
