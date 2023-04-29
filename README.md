@@ -4,5 +4,6 @@ A weather app made using OpenWeatherMap API in JavaScript. The app tells the cur
 Visit Website --> [WeatherAppUsingOpenWeatherMapAPI](https://kshitizrohilla.github.io/weather-app-using-openweathermap-api)
 
 ## Screenshots
-![sample-screenshot](https://raw.githubusercontent.com/kshitizrohilla/weather-app-using-openweathermap-api/screenshots/1.png)
-![sample-screenshot](https://raw.githubusercontent.com/kshitizrohilla/weather-app-using-openweathermap-api/screenshots/2.png)
+![sample-screenshot](https://raw.githubusercontent.com/kshitizrohilla/weather-app-using-openweathermap-api/main/screenshots/1.png)
+![sample-screenshot](https://raw.githubusercontent.com/kshitizrohilla/weather-app-using-openweathermap-api/main/screenshots/2.png)
+![sample-screenshot](https://raw.githubusercontent.com/kshitizrohilla/weather-app-using-openweathermap-api/main/screenshots/3.png)
