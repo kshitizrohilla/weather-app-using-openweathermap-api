@@ -66,8 +66,9 @@ ul
   background: rgba(0, 0, 0, 0.375);
   border: none;
   color: #fff;
-  border-radius: 2.5px;
+  border-radius: 50px;
   outline: none;
+  box-shadow: 0 0 10px 1.25px dodgerblue;
 }
 
 .navbar a:hover:not(.repo-link)
