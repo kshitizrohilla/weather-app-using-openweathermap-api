@@ -31,6 +31,11 @@ cityInput.addEventListener("keyup", function(event)
 {
   if(event.key === "Enter")
   {
+
+		// document.getElementById("locationName").innerHTML = "<img src='icons/loader.gif' id='loader'>";
+		// document.getElementById("temperatureValue").innerHTML = "<img src='icons/loader.gif' id='loader'>";
+		// document.getElementById("weatherType").innerHTML = "<img src='icons/loader.gif' id='loader'>";
+
     var cityInputValue = cityInput.value;
 
     var apiKey = "b1fd6e14799699504191b6bdbcadfc35"; // Default

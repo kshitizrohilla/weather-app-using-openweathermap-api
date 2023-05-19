@@ -14,6 +14,13 @@ body
   font-weight: 500;
 }
 
+#loader
+{
+	width: 37.5px;
+	height: 37.5px;
+	display: none;
+}
+
 .imgs-as-icons
 {
   width: 50px;
