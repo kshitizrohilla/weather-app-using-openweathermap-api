@@ -31,10 +31,38 @@ cityInput.addEventListener("keyup", function(event)
 {
   if(event.key === "Enter")
   {
+		loader();
+		function loader()
+		{
 
-		// document.getElementById("locationName").innerHTML = "<img src='icons/loader.gif' id='loader'>";
-		// document.getElementById("temperatureValue").innerHTML = "<img src='icons/loader.gif' id='loader'>";
-		// document.getElementById("weatherType").innerHTML = "<img src='icons/loader.gif' id='loader'>";
+			document.getElementById("locationName").innerHTML = "";
+			document.getElementById("temperatureValue").innerHTML = "";
+			document.getElementById("weatherType").innerHTML = "";
+
+			const img1 = document.createElement("img");
+			const img2 = document.createElement("img");
+			const img3 = document.createElement("img");
+
+			img1.id = "loader1";
+			img2.id = "loader2";
+			img3.id = "loader3";
+
+			img1.src = "icons/loader.gif";
+			img2.src = "icons/loader.gif";
+			img3.src = "icons/loader.gif";
+
+			const parentElement1 = document.getElementById("locationName");
+			const parentElement2 = document.getElementById("temperatureValue");
+			const parentElement3 = document.getElementById("weatherType");
+
+			parentElement1.appendChild(img1);
+			parentElement2.appendChild(img2);
+			parentElement3.appendChild(img3);
+
+			// document.getElementById("loader1").src = "icons/loader.gif";
+			// document.getElementById("loader2").src = "icons/loader.gif";
+			// document.getElementById("loader3").src = "icons/loader.gif";
+		}
 
     var cityInputValue = cityInput.value;
 
@@ -79,7 +107,12 @@ cityInput.addEventListener("keyup", function(event)
           document.getElementById("sunriseAdditionalValue").innerHTML = sunrise;
           document.getElementById("sunsetAdditionalValue").innerHTML = sunset;
         }
-        else document.getElementById("locationName").innerHTML = "City not found";
+        else
+				{
+					document.getElementById("locationName").innerHTML = "City Not Found";
+					document.getElementById("temperatureValue").innerHTML = "";
+					document.getElementById("weatherType").innerHTML = "";
+				}
       }
 
       getWeather();
