@@ -44,7 +44,8 @@ body
 
 .mobile-navbar
 {
-  background: rgba(0, 0, 0, 1.0);
+	list-style-type: none;
+  /* background: rgba(0, 0, 0, 1.0); */
   opacity: 100%;
   transition: 0.3s;
 }
@@ -52,14 +53,14 @@ body
 .mobile-navbar li
 {
 	margin: 7.5px auto;
-	width: 75%;
+	width: 87.5%;
 }
 
 .mobile-navbar li input
 {
 	height: 50px;
 	width: 100%;
-	background: #555;
+	background: #1d1d1f;
 	color: #fff;
 	text-align: center;
 	border: none;
