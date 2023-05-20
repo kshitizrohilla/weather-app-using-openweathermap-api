@@ -7,6 +7,11 @@
   /* transition: 0.25s; */
 }
 
+.mobile-navbar
+{
+	display: none;
+}
+
 body
 {
   margin: 0;
@@ -33,6 +38,37 @@ body
   text-align: right;
   opacity: 100%;
   transition: 0.3s;
+}
+
+.mobile-navbar
+{
+  background: rgba(0, 0, 0, 1.0);
+  opacity: 100%;
+  transition: 0.3s;
+}
+
+.mobile-navbar li
+{
+	margin: 7.5px auto;
+	width: 75%;
+}
+
+.mobile-navbar li input
+{
+	height: 5vh;
+	width: 100%;
+	background: #555;
+	color: #fff;
+	text-align: center;
+	border: none;
+	border-radius: 50px;
+	outline: none;
+	font-size: 20px;
+}
+
+.mobile-navbar input::placeholder
+{
+	color: lightgrey;
 }
 
 ul
@@ -218,4 +254,47 @@ ul
 {
   font-weight: bold;
   font-size: 25px;
+}
+
+@media (max-width: 600px)
+{
+	.navbar
+	{
+		display: none;
+	}
+
+	.mobile-navbar
+	{
+		display: block;
+	}
+
+	.additionals-first-row, .additionals-second-row
+	{
+		line-height: 27.5px;
+		margin: 0;
+	}
+
+	.additionals-first-row span, .additionals-second-row span
+	{
+		display: none;
+	}
+
+	.daily-forecast-card
+	{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.daily-forecast .daily-forecast-label
+	{
+		background: lightgrey;
+		color: #252525;
+		padding: 10px;
+		width: 75%;
+		border-radius: 50px;
+		margin: auto;
+	}
+	#weatherType
+	{
+		margin-top: 0;
+	}
 }

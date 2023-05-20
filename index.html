@@ -53,6 +53,13 @@
 
 				height: 100vh;
       }
+			@media (max-width: 600px)
+			{
+				body
+				{
+					height: 100%;
+				}
+			}
     </style>
   </head>
   <body>
@@ -65,7 +72,7 @@
     </ul>
 
 		<ul class="mobile-navbar">
-      <li><input spellcheck="false" class="search-city" id="searchCity" type="text" autocomplete="off" placeholder="🔍︎ Search City"></li>
+      <li><input spellcheck="false" class="mobile-search-city" id="mobileSearchCity" type="text" autocomplete="off" placeholder="Search City..."></li>
     </ul>
 
     <h1 class="location-name" id="locationName">Search City...</h1>
@@ -136,7 +143,7 @@
       </span>
     </div>
 
-    <!-- <br> -->
+    <br>
     <!-- <div class="separator"></div> -->
 
     <div class="daily-forecast">
@@ -204,6 +211,8 @@
       </div>
     </div>
     
-    <script src="scripts/script.js"></script> 
+    <script src="scripts/script.js"></script>
+		<script src="scripts/mobile.js"></script>
+		<br><br><br><br><br>
   </body>
 </html>
