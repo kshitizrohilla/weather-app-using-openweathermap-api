@@ -40,6 +40,8 @@ body
   transition: 0.3s;
 }
 
+/* START OF MOBILE STYLES */
+
 .mobile-navbar
 {
   background: rgba(0, 0, 0, 1.0);
@@ -55,7 +57,7 @@ body
 
 .mobile-navbar li input
 {
-	height: 5vh;
+	height: 5px;
 	width: 100%;
 	background: #555;
 	color: #fff;
@@ -70,6 +72,8 @@ body
 {
 	color: lightgrey;
 }
+
+/* END OF MOBILE STYLES */
 
 ul
 {
@@ -266,6 +270,7 @@ ul
 	.mobile-navbar
 	{
 		display: block;
+
 	}
 
 	.additionals-first-row, .additionals-second-row
