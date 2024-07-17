@@ -64,6 +64,9 @@ cityInputMobile.addEventListener("keyup", function (event) {
             .then(response => response.json())
             .then(data => {
               const forecastContainer = document.getElementById('forecast-container');
+
+              forecastContainer.innerHTML = '';
+
               const dailyForecasts = {};
               data.list.forEach(entry => {
                 const dateTime = new Date(entry.dt * 1000);
@@ -91,14 +94,14 @@ cityInputMobile.addEventListener("keyup", function (event) {
                 forecastCard.classList.add('daily-forecast-card');
 
                 forecastCard.innerHTML = `
-                <p class="daily-forecast-date">${day.date}</p>
-                <div class="daily-forecast-logo"><img class="imgs-as-icons" src="${day.icon}"></div>
-                <div class="max-min-temperature-daily-forecast">
-                    <span class="max-daily-forecast">${Math.round(day.maxTemp - 273.15)}<sup>o</sup>C</span>
-                    <span class="min-daily-forecast">${Math.round(day.minTemp - 273.15)}<sup>o</sup>C</span>
-                </div>
-                <p class="weather-type-daily-forecast">${day.weatherType}</p>
-            `;
+        <p class="daily-forecast-date">${day.date}</p>
+        <div class="daily-forecast-logo"><img class="imgs-as-icons" src="${day.icon}"></div>
+        <div class="max-min-temperature-daily-forecast">
+          <span class="max-daily-forecast">${Math.round(day.maxTemp - 273.15)}<sup>o</sup>C</span>
+          <span class="min-daily-forecast">${Math.round(day.minTemp - 273.15)}<sup>o</sup>C</span>
+        </div>
+        <p class="weather-type-daily-forecast">${day.weatherType}</p>
+      `;
 
                 forecastContainer.appendChild(forecastCard);
               });
